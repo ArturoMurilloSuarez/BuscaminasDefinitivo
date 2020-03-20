@@ -1,0 +1,11 @@
+C:\Users\Arturo MS\source\repos\BuscaminasDefinitivo\BuscaminasDefinitivo\bin\Debug\netcoreapp3.1\BuscaminasDefinitivo.exe
+C:\Users\Arturo MS\source\repos\BuscaminasDefinitivo\BuscaminasDefinitivo\bin\Debug\netcoreapp3.1\BuscaminasDefinitivo.deps.json
+C:\Users\Arturo MS\source\repos\BuscaminasDefinitivo\BuscaminasDefinitivo\bin\Debug\netcoreapp3.1\BuscaminasDefinitivo.runtimeconfig.json
+C:\Users\Arturo MS\source\repos\BuscaminasDefinitivo\BuscaminasDefinitivo\bin\Debug\netcoreapp3.1\BuscaminasDefinitivo.runtimeconfig.dev.json
+C:\Users\Arturo MS\source\repos\BuscaminasDefinitivo\BuscaminasDefinitivo\bin\Debug\netcoreapp3.1\BuscaminasDefinitivo.dll
+C:\Users\Arturo MS\source\repos\BuscaminasDefinitivo\BuscaminasDefinitivo\bin\Debug\netcoreapp3.1\BuscaminasDefinitivo.pdb
+C:\Users\Arturo MS\source\repos\BuscaminasDefinitivo\BuscaminasDefinitivo\obj\Debug\netcoreapp3.1\BuscaminasDefinitivo.csprojAssemblyReference.cache
+C:\Users\Arturo MS\source\repos\BuscaminasDefinitivo\BuscaminasDefinitivo\obj\Debug\netcoreapp3.1\BuscaminasDefinitivo.AssemblyInfoInputs.cache
+C:\Users\Arturo MS\source\repos\BuscaminasDefinitivo\BuscaminasDefinitivo\obj\Debug\netcoreapp3.1\BuscaminasDefinitivo.AssemblyInfo.cs
+C:\Users\Arturo MS\source\repos\BuscaminasDefinitivo\BuscaminasDefinitivo\obj\Debug\netcoreapp3.1\BuscaminasDefinitivo.dll
+C:\Users\Arturo MS\source\repos\BuscaminasDefinitivo\BuscaminasDefinitivo\obj\Debug\netcoreapp3.1\BuscaminasDefinitivo.pdb
