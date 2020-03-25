@@ -20,12 +20,12 @@ namespace BuscaminasDefinitivo
 
         public Celda()
         {
-            this.estado = Status.FLAG; ////Para el principio
+            this.estado = Status.SHOWN; ////Para el principio
         }
 
         public int GetValue()
         {
-            throw new NotImplementedException();
+            return this.valor;
         }
 
         public bool IsHidden()

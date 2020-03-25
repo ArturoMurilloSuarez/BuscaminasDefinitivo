@@ -6,7 +6,7 @@ namespace BuscaminasDefinitivo
     {
         static void Main(string[] args)
         {
-            ConsoleGame<Celda> juego = new ConsoleGame<Celda>(6, 7, 5);
+            ConsoleGame<Celda> juego = new ConsoleGame<Celda>(6, 7, 10);
             Console.ReadKey();
 
         }

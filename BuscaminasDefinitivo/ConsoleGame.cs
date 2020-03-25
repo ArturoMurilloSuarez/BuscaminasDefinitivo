@@ -35,16 +35,16 @@ namespace BuscaminasDefinitivo
                 Console.ForegroundColor = ConsoleColor.White;
                 for (int j = 0; j < this.Width; j++)
                 {
-                    switch (this.celdas[j,i].GetStatus())
+                    switch (this.celdas[j,i].cell.GetStatus())
                     {
                         case Celda.Status.SHOWN:
-                            if (this.celdas[j,i] is Mina)
+                            if (this.celdas[j,i].cell is Mina)
                             {
                                 printingValue = this.mineSymbol.ToString();
                             }
                             else
                             {
-                                printingValue = "" + this.celdas[j,i].GetValue();
+                                printingValue = "" + this.celdas[j,i].cell.GetValue(); //con el .cell esta llamandolo desde cellnode
                             }
                             break;
                         case Celda.Status.FLAG:

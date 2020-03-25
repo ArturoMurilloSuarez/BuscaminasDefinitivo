@@ -13,6 +13,11 @@ namespace BuscaminasDefinitivo
 
 
 
+        public Mina()
+        {
+            this.estado = Celda.Status.SHOWN; ////Para el principio
+        }
+
         public int GetValue()
         {
             return 0;
