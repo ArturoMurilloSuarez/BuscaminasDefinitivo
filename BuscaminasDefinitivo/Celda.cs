@@ -17,10 +17,12 @@ namespace BuscaminasDefinitivo
         private int posX;
         private int posY;
         private Status estado;
+        private Status estado1;
 
         public Celda()
         {
-            this.estado = Status.SHOWN; ////Para el principio
+            this.estado = Status.HIDDEN;
+            this.estado1 = Status.SHOWN;////Para el principio
         }
 
         public int GetValue()
@@ -46,6 +48,11 @@ namespace BuscaminasDefinitivo
         public Status GetStatus()
         {
             return this.estado;
+        }
+
+        public Status GetStatus1()
+        {
+            return this.estado1;
         }
 
     }

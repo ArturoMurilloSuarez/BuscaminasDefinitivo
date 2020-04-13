@@ -9,13 +9,13 @@ namespace BuscaminasDefinitivo
         private int posX;
         private int posY;
         private Celda.Status estado;
-
-
+        private Celda.Status estado1;
 
 
         public Mina()
         {
-            this.estado = Celda.Status.SHOWN; ////Para el principio
+            this.estado = Celda.Status.SHOWN;
+            this.estado1 = Celda.Status.SHOWN;////Para el principio
         }
 
         public int GetValue()
@@ -39,6 +39,10 @@ namespace BuscaminasDefinitivo
         public Celda.Status GetStatus()
         {
             return this.estado;
+        }
+        public Celda.Status GetStatus1()
+        {
+            return this.estado1;
         }
 
     }
