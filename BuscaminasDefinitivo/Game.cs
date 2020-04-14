@@ -69,9 +69,11 @@ namespace BuscaminasDefinitivo
 
         public void BUSCAAR(string coordenada)
         {
-            switch (coordenada)
+            switch (coordenada) //Codigo repetitivo, porque no usar un for? ¿Que pasa quiero generar un juego de 8x8?
             {
                 case "A1":
+                    //Porque no mejor x, y? Ej // 0,0
+                    this.celdas[0, 0].cell.LeftClick();//Ahora solo falta implementar la accion de la funcion
                     this.lugar = 0;
                     break;
                 case "A2":
@@ -200,7 +202,7 @@ namespace BuscaminasDefinitivo
                 default:
                     break;
             }
-
+            //suiguiro el codigo de abajo, pero me gusto que hayas propuesto una solución. El problema es que no estas aprobechando las propiedades que diferencian a un objeto cell de un objeto mina
             List<CellNode> list = new List<CellNode>();
             for (int i = 0; i < this.Width; i++)
             {
@@ -218,7 +220,7 @@ namespace BuscaminasDefinitivo
                 }
                 if (this.lugar != minas[i])
                 {
-                    list[this.lugar].cell.GetStatus1();
+                    list[this.lugar].cell.GetStatus();
                 }
             }
 

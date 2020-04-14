@@ -5,7 +5,7 @@
         int GetValue();
         bool IsHidden();
         Celda.Status GetStatus();
-        Celda.Status GetStatus1();
+       // Celda.Status GetStatus1();
 
         void LeftClick();
         void RightClick();
