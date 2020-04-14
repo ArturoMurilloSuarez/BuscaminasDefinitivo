@@ -9,13 +9,13 @@ namespace BuscaminasDefinitivo
         private int posX;
         private int posY;
         private Celda.Status estado;
-        private Celda.Status estado1;
+       // private Celda.Status estado1;
 
 
         public Mina()
         {
-            this.estado = Celda.Status.SHOWN;
-            this.estado1 = Celda.Status.SHOWN;////Para el principio
+            this.estado = Celda.Status.HIDDEN;
+          //  this.estado1 = Celda.Status.SHOWN;////Para el principio
         }
 
         public int GetValue()
@@ -30,6 +30,7 @@ namespace BuscaminasDefinitivo
 
         public void LeftClick()
         {
+            throw new Exception("Una accion para que detecte que ya acabo el juego");
         }
 
         public void RightClick()
@@ -40,10 +41,10 @@ namespace BuscaminasDefinitivo
         {
             return this.estado;
         }
-        public Celda.Status GetStatus1()
+        /*public Celda.Status GetStatus1()
         {
             return this.estado1;
-        }
+        }*/
 
     }
 }

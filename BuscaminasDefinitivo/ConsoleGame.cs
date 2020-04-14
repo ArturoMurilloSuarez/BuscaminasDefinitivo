@@ -71,8 +71,10 @@ namespace BuscaminasDefinitivo
             Console.Write("COORDENADA: ");
             this.coordenada = Console.ReadLine();
             BUSCAAR(coordenada);
+            //Si no ha acabado el juego: llama nuevamente a Showgrid() para que siga actualizandose
+
         }
-            
+
     }
 
 
