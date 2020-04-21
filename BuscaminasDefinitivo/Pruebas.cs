@@ -8,43 +8,15 @@ namespace BuscaminasDefinitivo
     {
         //public static void Main()
         //{
-            
-        //        int n = 20; //Width
-        //        int[] arr = new int[n];
-        //        for (int i = 0; i < n; i++)
+        //    List<CellNode> list = new List<CellNode>(); //Guarda todas las posiciones celdas que ya se generaron en una lista
+        //    for (uint i = 0; i< this.Width; i++) //Aqui solo las va agregando
+        //    {
+        //        for (uint j = 0; j< this.Height; j++)
         //        {
-        //            arr[i] = i + 3;
+        //            list.Add(this.celdas[i, j]);
         //        }
-        //        bool bandera = true;
-        //        int x = 0;
-        //        int y = 0;
-        //        do
-        //        {
-        //            Console.Write("COLUMNA (LETRA): ");
-        //            string entrada = Console.ReadLine().ToUpper();
-        //            int indice = (int)entrada[0] - 65; //sACAR ESTAS ATRIBUTOS?
-
-        //            if (indice < arr.Length)
-        //            {
-        //                y = arr[indice];
-        //                Console.Write("FILA (NÚMERO): ");
-        //                int fila = int.Parse(Console.ReadLine());
-        //                if (fila < 10) //Ese 10 cambia dependiendo del Length no se si tiene que ser igual
-        //                {
-        //                    x = fila + 3;
-        //                    bandera = false; //AL FINAL DE CONDICION
-        //                }
-        //                else
-        //                {
-        //                    Console.WriteLine("Número incorrecto.");
-        //                }
-        //            }
-        //            else
-        //            {
-        //                Console.WriteLine("Letra incorrecta.");
-        //            }
-        //        } while (bandera == true);
-        //        Console.WriteLine("LA coordenada va a ser x: {0} y y: {1}", x, y);
+        //    }
+         
         //}
 
     }

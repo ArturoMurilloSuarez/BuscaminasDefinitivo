@@ -9,13 +9,10 @@ namespace BuscaminasDefinitivo
         private char hiddenSymbol;
         private char mineSymbol;
         private char flagSymbol;
-        private bool firstMove;
 
-        private int x = 0;
-        private int y = 0;
-        int[,] coordenadas = new int[1,2]; //
-        List<int> coordenada = new List<int>();
-
+        public int x = 0;
+        public int y = 0;
+        int[,] coordenadas = new int[1,2]; 
 
         public ConsoleGame(int Widht, int Height, int minas) : base(Widht, Height, minas)
         {
@@ -24,11 +21,11 @@ namespace BuscaminasDefinitivo
             this.flagSymbol = '#';
             Console.Clear();
             this.Showgrid();
-            this.firstMove = true;
         }
 
         public void Showgrid()
         {
+            Console.Clear();
             Console.SetCursorPosition(0, 0);
             Console.Write(new string(' ', Console.WindowWidth * 3));
             Console.SetCursorPosition(0, 0);
@@ -58,7 +55,7 @@ namespace BuscaminasDefinitivo
                             }
                             else
                             {
-                                printingValue = "" + this.celdas[j, i].cell.GetValue(); //con el .cell esta llamandolo desde cellnode
+                                printingValue = "" + this.celdas[j, i].cell.GetValue(); //valor de cuando estan  erca las minas
                             }
                             break;
                         case Celda.Status.FLAG:
@@ -75,18 +72,19 @@ namespace BuscaminasDefinitivo
                 //this.coordenada = Console.ReadLine();
                 //BUSCAAR(coordenada);
             }
-            CambiarCoordenadas();
-            for (int i = 0; i < this.TotalMinas; i++)
+            if (gameover == false && wingame == false)
             {
-                Console.Write("MINA {0}:  ", i + 1);
-                for (int j = 0; j < 2; j++)
-                {
-
-                    Console.Write("{0}, ", minasss[i, j]); //j es x e i es y
-                }
-                Console.WriteLine(" ");
+                this.IngresarCoordenada();
+                Showgrid();
             }
-            this.IngresarCoordenada();
+            if (gameover == true)
+            {
+                Console.WriteLine("*****PERDISTE*****");
+            }
+            if (wingame == true)
+            {
+                Console.WriteLine("*****GANASTE*****");
+            }
 
         }
 
@@ -95,12 +93,30 @@ namespace BuscaminasDefinitivo
             int[] arr = new int[this.Width];
             for (int i = 0; i < this.Width; i++)
             {
-                arr[i] = i + 3;
+                arr[i] = i; 
             }
             bool bandera = true;
+            bool banderita = false;
+            string resp;
             do
             {
+                do
+                {
+                    Console.Write("¿Desea colocar bandera?: (S/N): ");
+                    resp = Console.ReadLine().ToUpper();
+                    if (resp == "S")
+                    {
+                        banderita = true;
+                        this.FlagCounter = FlagCounter - 1;
+                    }
+                    if (resp != "S" && resp != "N")
+                    {
+                        Console.WriteLine("Valor incorrecto.");
+
+                    }
+                } while (resp != "S" && resp != "N");
                 Console.Write("COLUMNA (LETRA): ");
+
                 string entrada = Console.ReadLine().ToUpper();
                 int indice = (int)entrada[0] - 65; 
 
@@ -109,9 +125,9 @@ namespace BuscaminasDefinitivo
                     this.x = arr[indice];
                     Console.Write("FILA (NÚMERO): ");
                     int fila = int.Parse(Console.ReadLine());
-                    if (fila <= this.Height && fila > 0) //Ese 10 cambia dependiendo del Length no se si tiene que ser igual
+                    if (fila <= this.Height && fila > 0) 
                     {
-                        this.y = fila + 2;
+                        this.y = fila - 1 ; 
                         bandera = false; //AL FINAL DE CONDICION
                     }
                     else
@@ -124,32 +140,19 @@ namespace BuscaminasDefinitivo
                     Console.WriteLine("Letra incorrecta.");
                 }
             } while (bandera == true);
-            coordenada.Add(this.x);
-            coordenada.Add(this.y);
             this.coordenadas[0, 0] = this.x;
-            this.coordenadas[0, 1] = this.y; //MEJOR USAR EL ARREGLO, POR EL FOR
-            for (int i = 0; i < 2; i++)
+            this.coordenadas[0, 1] = this.y; 
+            if (banderita == false)
             {
-                for (int j = 0; j < 1; j++)
-                {
-                    Console.Write("{0}, ", this.coordenadas[j, i]); //j es x e i es y
-                }
+                Accion(this.x, this.y); 
             }
-            Console.WriteLine("");
-
-            for (int i = 0; i < this.TotalMinas; i++)
+            if (banderita == true)
             {
-                Console.Write("MINA {0}:  ", i + 1);
-                for (int j = 0; j < 2; j++)
-                {
-                    
-                    Console.Write("{0}, ", minasss[i, j]); //j es x e i es y
-                }
-                Console.WriteLine(" ");
+                Accion2(this.x, this.y); 
             }
-            //Console.WriteLine("LA coordenada va a ser x: {0} y y: {1}", this.x, this.y);
-            //Console.WriteLine("{0}, {1}", coordenada[0], coordenada[1]);
         }
+
+       
 
     }
 

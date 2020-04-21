@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuscaminasDefinitivo", "BuscaminasDefinitivo\BuscaminasDefinitivo.csproj", "{80991C96-5558-4A0A-973F-72542AC524CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuscaminasDefinitivo", "BuscaminasDefinitivo\BuscaminasDefinitivo.csproj", "{80991C96-5558-4A0A-973F-72542AC524CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuscaminasGrafico", "BuscaminasGrafico\BuscaminasGrafico.csproj", "{B8D458DC-6BD1-4F7D-9BC2-F2C386DE540D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{80991C96-5558-4A0A-973F-72542AC524CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80991C96-5558-4A0A-973F-72542AC524CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80991C96-5558-4A0A-973F-72542AC524CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8D458DC-6BD1-4F7D-9BC2-F2C386DE540D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8D458DC-6BD1-4F7D-9BC2-F2C386DE540D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8D458DC-6BD1-4F7D-9BC2-F2C386DE540D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8D458DC-6BD1-4F7D-9BC2-F2C386DE540D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

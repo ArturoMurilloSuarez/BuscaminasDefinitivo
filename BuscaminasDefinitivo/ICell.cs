@@ -8,5 +8,7 @@
 
         void LeftClick();
         void RightClick();
+
+        void Endgame();
     }
 }

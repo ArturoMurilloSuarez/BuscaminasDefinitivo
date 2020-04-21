@@ -13,9 +13,9 @@ namespace BuscaminasDefinitivo
             FLAG,
         }
 
-        private int valor;
         private int posX;
         private int posY;
+        private int valor;
         private Status estado;
 
         public Celda()
@@ -35,17 +35,23 @@ namespace BuscaminasDefinitivo
 
         public void LeftClick()
         {
-            throw new NotImplementedException();
+            this.estado = Status.SHOWN;
+  
         }
 
         public void RightClick()
         {
-            throw new NotImplementedException();
+            this.estado = Status.FLAG;
         }
 
         public Status GetStatus()
         {
             return this.estado;
+        }
+
+        public void Endgame()
+        {
+            this.estado = Celda.Status.SHOWN;
         }
 
     }
